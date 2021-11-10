@@ -1,0 +1,24 @@
+.hover {
+    animation:mymove 2s infinite;
+	-webkit-animation:mymove 2s infinite;
+}
+@keyframes mymove{
+	0% {transform: translate(0px, 0px);}
+    50% {transform: translate(0px, -20px);}
+	100% {transform: translate(0px, 0px);}
+}
+
+@-webkit-keyframes mymove
+{
+	0% {transform: translate(0px, 0px);}
+    50% {transform: translate(0px, -20px);}
+	100% {transform: translate(0px, 0px);}
+}
+
+.hover-3d {
+	transition: transform 1.0s ease-in-out;
+}
+.hover-3d:hover {
+	transition: 1.0s ease-in-out;
+	transform: rotate3d(0,1,0,-0.1turn);
+}
